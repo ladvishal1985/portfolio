@@ -1,0 +1,34 @@
+<dom-module id="my-nav">
+  <style>
+    #wrapper ::content a {
+      text-decoration: none;
+      font-family: "JosefinSlab-SemiBold";
+      padding: 10px;
+      color: black;
+    }
+    #wrapper ::content .selected {
+      border-bottom: 2px solid red;    
+    }
+  </style>
+  <template>
+    <div id="wrapper">
+      <iron-selector selected="{{selected}}" selected-class="selected">
+        <content></content>
+      </iron-selector>
+    </div>
+  </template>
+  <script>
+    Polymer({
+      is: 'my-nav',
+      properties: {
+        selected: {
+          observer: '_selectedChanged' 
+        }
+      },
+      _selectedChanged: function(e) {
+        console.log(this.selected, 'is selected!');
+      }
+    });
+  </script>
+</dom-module>
+  

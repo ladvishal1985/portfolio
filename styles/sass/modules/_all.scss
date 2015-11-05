@@ -1,0 +1,79 @@
+@import 'grid';
+@import 'base';
+@import 'navigation';
+@import 'animations';
+@import 'skills';
+@import 'footer';
+@import 'header';
+@import 'home';
+@import 'contact';
+@import 'timeline';
+
+
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
+
+
+.form-horizontal {
+    margin-top: 10px;
+}
+
+
+.row {
+  margin-right: 0px; 
+  margin-left: 0px; 
+}
+.content{
+  height: 100%;
+}
+
+.page-container{
+  @extend %clearfix;
+  width: 100%;
+  /* height: 100%; */
+}
+
+/* page specific animations ------------------------ */
+.page-home    { }
+.page-about   { color:#a55400; width: 100%; }
+.page-contact   { }
+.page-articles   { 
+
+ }
+
+ .post-body{
+    padding: 10px;
+    height: 90%;
+    overflow-y: scroll;
+    font-family: cursive;
+    color: white;
+    font-size: 1.5em;
+ }
+
+
+.contact-container h3{
+  text-align: center;
+  float: none; 
+}
+.page { 
+  position:relative; 
+  top: 10%;
+  height: 75%;
+  padding-top: 5%;
+}
+
+
+/***Neeed To Remove*****/

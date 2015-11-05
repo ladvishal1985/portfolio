@@ -1,0 +1,37 @@
+body {
+	padding-top: 20px;
+	font-family : $font;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5 {
+	
+	font-weight: $font-header-weight;
+	font-family: JosefinSlab-SemiBold !important;
+}
+p, span, strong {
+	font-family: JosefinSlab-Regular !important;
+}
+
+
+h1 {
+  border-bottom: 1px solid gray;
+}
+
+@each $font-face in JosefinSlab-Thin, JosefinSlab-Regular, JosefinSlab-SemiBold  {
+    @font-face {
+          font-family: $font-face; 
+          font-style: normal; 
+          font-weight: normal;
+          //src: url('../../../font/josefin-slab/#{$font-face}.eot');
+          src:// url('../../../font/josefin-slab/#{$font-face}.eot?') format('eot'),
+              // url('../../../font/josefin-slab/#{$font-face}.woff') format('woff'),
+               url('../font/josefin-slab/#{$font-face}.ttf')  format('truetype');
+    }
+}
+/* @font-face {
+  font-family: JosefinSlab-Thin; 
+  font-style: normal; 
+  font-weight: normal;
+  src:url('../../../font/josefin-slab/JosefinSlab-Thin.ttf')  format('truetype');
+} */

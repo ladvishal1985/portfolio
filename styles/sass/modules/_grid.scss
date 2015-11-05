@@ -1,0 +1,21 @@
+// Variables
+$max-cols: 12;
+$gutter-width: 20px;
+
+ @mixin respondto($point) {
+   	@if $point == 'mobileonly' {
+     	@media only screen and (max-width: 480px) { @content ; }
+   	}
+   	@else if $point == 'phablet' {
+     	@media only screen and (min-width: 480px) and (max-width: 767px) { @content ; }
+  	}
+  	@else if $point == 'tablet' {
+     	@media only screen and (min-width: 768) and (max-width: 1023) { @content ; }
+  	}
+   	@else if $point == 'desktop' {
+     	@media only screen and (min-width: 1024)  { @content ; }
+	}
+	@else if $point == 'laptop' {
+     	@media only screen and (min-width: 1200)  { @content ; }
+	}
+}

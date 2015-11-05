@@ -1,0 +1,53 @@
+<div class="content page-contact">
+    <div class="container contact-container ">
+        <div class="col-md-12">
+    	    <form class="form-horizontal" method="post">
+                <fieldset>
+                    <h1>GET IN TOUCH</h1>            
+                    <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="cf icon-user"></i></span>
+                       	<div class="col-md-7">
+                            <input id="fname" name="name" type="text" placeholder="Name" class="form-control" ng-model="contactObj.name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="cf icon-mail-1"></i></span>
+                        <div class="col-md-7">
+                            <input id="email" name="email" type="email" ng-minlength="5" ng-maxlength="50" placeholder="Your Email Address" class="form-control" ng-model="contactObj.email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="cf icon-mobile"></i></span>
+                        <div class="col-md-7">
+                            <input id="phone" name="phone" type="text" placeholder="33-333-33333" name="phone" ng-pattern="ph_numbr" class="form-control" ng-model="contactObj.phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="cf icon-pencil"></i></span>
+                        <div class="col-md-7">
+                            <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for me here." rows="7"
+                            ng-model="contactObj.message" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="btn btn-primary btn-lg" ng-click="sendContactUs()">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+    	</div>
+    		
+	</div>
+    <script type="text/ng-template" id="mySuccess.html">
+        <div class="modal-header">
+            <h3 class="modal-title">Success!</h3>
+        </div>
+        <div class="modal-body">
+            Thank you for your message. Will get back to your in short time !
+        </div>
+    </script>
+</div>

@@ -1,0 +1,26 @@
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0.75%;
+  color: #fff;
+  margin: auto;
+  width: 100%; 
+  background: $hero-color;
+  height: 40px;
+  bottom: 0px;
+  img {
+  	width: 24px;
+  	float: right;
+  }
+}
+
+.developedby{
+  padding-left: 40%;
+}
+
+.poweredby {
+	span {
+		margin-right: 5px;
+	}
+  	float: right;
+}

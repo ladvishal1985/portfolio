@@ -1,0 +1,7 @@
+@function opacity($color, $opacity){
+    @return rgba($color, $opacity);
+}
+
+@function background-opacity($color, $opacity) {
+    @return rgba($color, $opacity);
+}

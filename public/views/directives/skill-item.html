@@ -1,0 +1,19 @@
+<div class="col-md-3 skills" >
+	<div class="wrapper">
+		<h1>{{skillInfo.name}}</h1>
+		<img ng-src="{{skillInfo.img}}" >
+		<p>{{skillInfo.description}}</p>
+	</div> 
+	<div class="overlay">
+		<div class="proficiency-list">
+			<div class="proficiency-item"  ng-repeat = "sub in skillInfo.subskill">
+				<p>{{sub.name}}</p>
+				<progressbar  class="progress-striped active" value="sub.proficiency" max ="10">
+					<b>{{sub.proficiency}}/10</b> 
+				</progressbar>	
+			</div>
+				
+		</div>
+		   
+	</div>			  		
+</div>

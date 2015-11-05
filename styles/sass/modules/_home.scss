@@ -1,0 +1,56 @@
+.intro-container {
+    padding-top: 3%;
+}
+.intro-container,.contact-container{
+  img  {
+    width: 350px;
+  }
+}
+
+.circle {
+  @include circle(35px);
+  font-size:20px;
+  color:rgba(232, 99, 78, 0.1);
+  line-height:35px;
+  text-align:center;
+  background:rgba(198, 196, 173, 0.1);
+  float: right;
+  margin: 5px;  
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    color:rgba(232, 99, 78, 1);
+    background:rgba(198, 196, 173, 1);
+    @include box-shadow(1px, 1px, 1px 0px, rgba(0,0,0,0.8));
+  }
+}
+
+.circle-profile{
+    background:url("../images/profile.png") center;
+    float: right;
+    margin: 5px;
+    @include box-shadow(1px, 1px, 1px 0px, rgba(black,0.8));
+    border: 5px solid rgba($hero-color, 1);
+    transition: all 0.25s ease-in;
+    &:hover {
+        background:url("../images/profile_hover.jpg") center;
+        border: 2px solid rgba($hero-color, 1);
+    }
+}
+
+.welcome-text{
+    text-align: center;
+    & > h2 {
+      font-size: 52px;
+      line-height: 60px;
+      margin: 0 0 20px;
+      color: $hero-color;
+      font-family: JosefinSlab-SemiBold;
+    }
+    & > p {
+      font-size: 28px;
+      line-height: 32px;
+      color: $hero-color;
+      font-family: JosefinSlab-Regular;
+    }
+}

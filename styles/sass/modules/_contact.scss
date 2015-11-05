@@ -1,0 +1,30 @@
+h1 {
+    overflow: hidden;
+    text-align: center;
+    margin: 15px 0;
+    padding: 10px 5px 5px 5px;
+    border: 1px solid #E8634E;
+    color: white;
+    line-height: 22px;
+    font-size: 1.2em;
+    background-color: rgba($hero-color-rgb, 0.7);
+    &:before,
+    &:after {
+      background-color: white;
+      content: "";
+      display: inline-block;
+      height: 3px;
+      position: relative;
+      vertical-align: middle;
+      width: 50%;
+      top:-5px;
+  }
+  &:before {
+      right: 0.5em;
+      margin-left: -50%;
+  }
+  &:after {
+      left: 0.5em;
+      margin-right: -50%;
+  }
+}

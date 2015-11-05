@@ -1,0 +1,32 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: $font;
+  font-family: JosefinSlab-Regular;
+}
+/* Space out content a bit */
+body {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #999;
+  font-family: Arial;
+  background: $bg-color-body;
+
+}
+
+.btn-primary {
+  color: $hero-color;
+  background-color: transparent;
+  border-color: $hero-color;
+  border-radius: 0px;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: $hero-color;
+  border-color: #fff;
+  border-radius: 0px;
+}
+
+.clearfix {
+  @extend %clearfix;
+}
